@@ -5,43 +5,50 @@ let numero2;
 let numero3;
 
 function sumar(x, y) {
-    suma = x + y;
+    let suma = x + y;
     return suma;
 }
 
 
 function restar(x, y) {
-    resta = x - y;
+    let resta = x - y;
     return resta;
 }
 
 
 function multiplicar(x, y) {
-    multiplicacion = x * y;
+    let multiplicacion = x * y;
     return multiplicacion;
 }
 
 
 function dividir(x, y) {
-    division = x / y;
+    let division = x / y;
     return division;
 }
 
 // NIVEL 3
 
 function cuadradoDeUnNumero(x) {
-    cuadrado = multiplicar(x, x);
+    let cuadrado = multiplicar(x, x);
     return cuadrado;
 }
 
 function promedioDeTresNumeros(x, y, z) {
-    promedio = dividir((x + y + z), 3);
+    let promedio = dividir((x + y + z), 3);
     return promedio;
 }
 
 function calcularPorcentaje(x, y) {
-    porcentaje = multiplicar(x, (y / 100));
+    let porcentaje = multiplicar(x, (y / 100));
     return porcentaje;
+}
+
+// TERMINAR - Falta razonamiento lógico.
+
+function generadorDePorcentaje(x, y) {
+    let generadorPorcentaje = calcularPorcentaje(y, x);
+    return generadorPorcentaje;
 }
 
 console.log("TESTEO DE CALCULADORA")
@@ -86,3 +93,7 @@ numero1 = parseInt(prompt("Ingrese el valor total: "))
 numero2 = parseInt(prompt("Ingrese el porcentaje del valor: ")) 
 console.log("El %" + numero2 + " de " + numero1 + " es: " + calcularPorcentaje(numero1, numero2))
 
+console.log("Generador de Porcentaje:")
+numero1 = parseInt(prompt("Ingrese el primer valor: ")) 
+numero2 = parseInt(prompt("Ingrese el valor total: ")) 
+console.log("El valor " + generadorDePorcentaje(numero1, numero2) + " es el %" + numero1  + " de " + numero2);
