@@ -1,4 +1,4 @@
-// 1) 
+// Ejercicio
 
 let matrizEjemplo = [
   [10,   3,    2,    1, 4, 7],
@@ -15,10 +15,10 @@ function sumarMayoresA10(matriz){
       valorMatriz = matriz[i][j];
       if(valorMatriz >= 10 && valorMatriz < 1000){
         suma += valorMatriz;
-      }
-    }
-  }
+      };
+    };
+  };
   return suma;
 }
 
-console.log(sumarMayoresA10(matrizEjemplo))
+console.log(sumarMayoresA10(matrizEjemplo));
